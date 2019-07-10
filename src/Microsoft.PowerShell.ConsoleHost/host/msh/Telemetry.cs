@@ -66,26 +66,7 @@ namespace Microsoft.PowerShell
         /// </summary>
         private static void SendTelemetry(string eventName, Dictionary<string, string> payload)
         {
-            try
-            {
-                var enabled = !GetEnvironmentVariableAsBool(name: TelemetryOptoutEnvVar, defaultValue: false);
-
-                if (!enabled)
-                {
-                    return;
-                }
-
-                if (_telemetryClient == null)
-                {
-                    _telemetryClient = new TelemetryClient();
-                }
-
-                _telemetryClient.TrackEvent(eventName, payload, null);
-            }
-            catch (Exception)
-            {
-                ; // Do nothing, telemetry can't be sent
-            }
+            return;
         }
 
         /// <summary>
