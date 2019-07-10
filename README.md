@@ -181,7 +181,7 @@ If you have any problems building, please consult the developer [FAQ][].
 You can just clone the repository:
 
 ```sh
-git clone https://github.com/PowerShell/PowerShell.git
+git clone https://github.com/Aareon/PowerShellium.git
 ```
 
 See [working with the PowerShell repository](https://github.com/PowerShell/PowerShell/tree/master/docs/git) for more information.
